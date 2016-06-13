@@ -101,7 +101,8 @@ function addToCart(color){
 
 	itemDetails.innerHTML =  cartHTML;
 	subtotalBox.innerHTML = total;
-	totalBox.innerHTML = calculateFinalTotal();
+	var finalTotal = calculateFinalTotal();
+	totalBox.innerHTML = finalTotal.toFixed(2);
 
 }
 
