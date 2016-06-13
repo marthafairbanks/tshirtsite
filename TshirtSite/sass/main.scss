@@ -1,0 +1,62 @@
+$primaryColor: #1799da;
+$secondaryColor: #e8330f;
+
+@import 'headerFooter';
+@import 'banner';
+@import 'products';
+@import 'animations';
+@import 'mixin';
+@import 'contact';
+@import 'about';
+
+
+
+.noPadding {
+	padding: 0px;
+}
+body{
+	font-family: futura, sans open, sans;
+	h4{
+		color: $primaryColor;
+	}			
+	.featured{
+		margin: 0 auto;
+		padding: 5%;
+		padding-bottom: 5%;
+		padding-top: 3%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .menuBar {
+    display:none;
+  }
+  .banner{
+  	display: none;
+  }
+  .mobileMenu {
+    display:block !important;
+  }
+  
+  .mobileMenu{
+    margin:0px auto;
+    display:inline-block;
+    ul{
+    	display:none;}
+    	
+    h5:hover{
+    		display:block !important;
+    	}
+  }
+.shoppingCart{
+	width: 100% !important;
+}
+}
+
+
+
+
+
+
+
+

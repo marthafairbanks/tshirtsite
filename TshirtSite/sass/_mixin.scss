@@ -1,0 +1,9 @@
+@mixin getColorFont($amount){
+    color: lighten($primaryColor, $amount);
+}
+
+@for $i from 1 through 6 {
+  .rw-words-1 span:nth-child(#{$i}) {
+    @include getColorFont($i*5)
+  }
+}  

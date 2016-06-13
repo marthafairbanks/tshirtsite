@@ -1,0 +1,36 @@
+$primaryColor: #1799da;
+$secondaryColor: #e8330f;
+
+.imageBox{
+	background-image: url("../images/cincinnatiMap.jpg");
+	background-position: left;
+	height: 400px;
+	width: 75%;
+	opacity: .6;
+	margin: 0 auto;
+	padding-top: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border: 4px solid $primaryColor;
+	.wrapper{
+		width: 400px;
+    	margin: 0 auto;
+		margin-top: 6%;
+		background-color: white;
+		opacity: .8;
+		border: 4px dashed $secondaryColor;
+		h3{
+			text-align: center;
+			color: black;
+		}
+		p {
+			color: black;
+			text-align: center;
+			font-size: 17px;
+			a {
+				color: $primaryColor;
+				text-decoration: none;
+			}
+		}
+	}
+}

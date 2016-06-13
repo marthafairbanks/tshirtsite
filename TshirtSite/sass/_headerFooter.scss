@@ -1,0 +1,110 @@
+$primaryColor: #1799da;
+$secondaryColor: #e8330f;	
+
+	header {
+		height: 120px;
+		width: 100%;
+		background-color: $primaryColor;
+		z-index: 999;
+		position:relative;
+		.leftColumn{
+			height: 100%;
+			#tShirtIcon {
+				height: 90%;
+		 		display: block;
+		 		margin: 5px auto;
+		 		float: left;
+				path {
+		  			stroke:white;
+				}
+			}
+		}
+		h2 {
+			color: white;
+			margin-left:100px;
+		}
+
+		.rightColumn{
+			text-align: right;
+				h5 {
+					color:white;
+					text-transform: uppercase;
+			    	&:hover {
+			    		cursor: pointer;
+			    	}
+			}
+			.fa-shopping-cart {
+				margin-top: 25px;				
+				font-size: 50px;
+				color: white;
+				&:hover {
+					animation: cartGrow 1.5s ease;
+	  				animation-iteration-count: 1;
+      				cursor: pointer;
+	  			}
+			}
+		}
+		.menuBar {
+			height: 45px;
+			background-color: $secondaryColor;
+			opacity: .9;
+			ul {
+				padding-top: 12px;
+				list-style-type: none;
+				font-size: 16px;
+				li{
+					display:inline;
+					a {
+						padding: 0px 2%;
+						margin-left: 13%;
+						color: white;
+					}
+					:hover{
+						text-decoration: none;
+						cursor: pointer;
+					}						
+				}
+			}
+		}
+		.mobileMenu{
+			display:none;
+		}	
+	}
+
+	footer {
+		height: 100px;
+		background-color: $primaryColor;
+		border-top: 4px solid $secondaryColor;
+		color: white;
+		.leftColumn{
+			height: 100%;
+			ul {
+				list-style-type: none;
+				font-size: 14px;
+				margin-top: 15px;
+				li{
+					display:inline;
+					a {
+						margin-left: 10%;
+						color: white;
+					}
+					:hover{
+						text-decoration: none;
+						cursor: pointer;
+					}						
+				}
+			}
+		}	
+		.rightColumn{
+			height: 100%;
+			#tShirtIcon {
+				height: 90%;
+		 		display: block;
+		 		margin: 5px 15px 0 auto;
+		 		float: right;
+				path {
+		  			stroke:white;
+				}
+			}
+		}
+	}	
