@@ -9,9 +9,12 @@ $primaryColor: #1799da;
 
 
 .rowPage {
-  margin: 1% + 1%;
+  padding-left: 5%;
 }
 
+.ColumnOne, .ColumnTwo, .ColumnThree{
+  width: 375px;
+}
 .products{
   margin-top:5%;
   margin-bottom: 5%;

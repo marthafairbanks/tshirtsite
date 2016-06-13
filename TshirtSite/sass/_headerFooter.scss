@@ -26,9 +26,11 @@ $secondaryColor: #e8330f;
 
 		.rightColumn{
 			text-align: right;
+			margin-top: 35px;
 				h5 {
 					color:white;
 					text-transform: uppercase;
+					display:inline-block;
 			    	&:hover {
 			    		cursor: pointer;
 			    	}
@@ -37,7 +39,7 @@ $secondaryColor: #e8330f;
 				margin-top: 25px;				
 				font-size: 50px;
 				color: white;
-				&:hover {
+				:hover {
 					animation: cartGrow 1.5s ease;
 	  				animation-iteration-count: 1;
       				cursor: pointer;
@@ -67,7 +69,37 @@ $secondaryColor: #e8330f;
 			}
 		}
 		.mobileMenu{
-			display:none;
+			display:block;
+			width: 40px;
+			height: 40px;
+			float: right;
+			margin-top: -100px;
+			margin-right: 20px;
+			.fa {
+				font-size: 30px;
+				color:white;
+			}
+			li{
+				display:none;
+				margin-right: 50px;
+			}
+			&:hover {
+				cursor: pointer;
+				ul {
+					list-style: none;
+					background-color: white;
+					border: 1px solid $secondaryColor;
+					width: 100px;
+					margin-left: -100px;				
+					li {
+					display: inline-block;
+					padding: 5px;
+					margin: 0 auto;
+					margin-left: 20px;
+					text-align: center;					
+					}
+				}
+			}
 		}	
 	}
 

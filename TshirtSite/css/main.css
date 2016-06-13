@@ -17,17 +17,19 @@ header {
     color: white;
     margin-left: 100px; }
   header .rightColumn {
-    text-align: right; }
+    text-align: right;
+    margin-top: 35px; }
     header .rightColumn h5 {
       color: white;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: inline-block; }
       header .rightColumn h5:hover {
         cursor: pointer; }
     header .rightColumn .fa-shopping-cart {
       margin-top: 25px;
       font-size: 50px;
       color: white; }
-      header .rightColumn .fa-shopping-cart:hover {
+      header .rightColumn .fa-shopping-cart :hover {
         animation: cartGrow 1.5s ease;
         animation-iteration-count: 1;
         cursor: pointer; }
@@ -49,7 +51,32 @@ header {
           text-decoration: none;
           cursor: pointer; }
   header .mobileMenu {
-    display: none; }
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: -100px;
+    margin-right: 20px; }
+    header .mobileMenu .fa {
+      font-size: 30px;
+      color: white; }
+    header .mobileMenu li {
+      display: none;
+      margin-right: 50px; }
+    header .mobileMenu:hover {
+      cursor: pointer; }
+      header .mobileMenu:hover ul {
+        list-style: none;
+        background-color: white;
+        border: 1px solid #e8330f;
+        width: 100px;
+        margin-left: -100px; }
+        header .mobileMenu:hover ul li {
+          display: inline-block;
+          padding: 5px;
+          margin: 0 auto;
+          margin-left: 20px;
+          text-align: center; }
 
 footer {
   height: 100px;
@@ -225,7 +252,10 @@ footer {
     transform: scale(1); } }
 
 .rowPage {
-  margin: 2%; }
+  padding-left: 5%; }
+
+.ColumnOne, .ColumnTwo, .ColumnThree {
+  width: 375px; }
 
 .products {
   margin-top: 5%;
@@ -636,28 +666,3 @@ body {
     padding: 5%;
     padding-bottom: 5%;
     padding-top: 3%; }
-
-@media screen and (max-width: 768px) {
-  .menuBar {
-    display: none; }
-  .mobileMenu {
-    display: block !important; }
-  .mobileMenu {
-    margin: 0px auto; }
-    .mobileMenu ul, .mobileMenu :active ul {
-      display: none;
-      position: absolute;
-      padding: 20px;
-      background: #fff;
-      border: 5px solid #444;
-      right: 20px;
-      top: 60px;
-      width: 50%;
-      border-radius: 4px 0 4px 4px; }
-    .mobileMenu li {
-      text-align: center;
-      width: 100%;
-      padding: 10px 0;
-      margin: 0; }
-      .mobileMenu li :hover ul {
-        display: block; } }
