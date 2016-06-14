@@ -28,9 +28,21 @@ body{
 }
 
 
+@media (max-width: 1000px) {
+    .mediaBreak {
+    	float: none !important;
+    	display: block !important;
+    	margin: 0px auto !important;
+    }
+}
 
-
-
+@media (max-width: 750px) {
+    .ColumnOne, .ColumnTwo, .ColumnThree {
+    	float: none !important;
+    	display: block !important;
+    	margin: 0px auto !important;
+ 	}   
+}
 
 
 

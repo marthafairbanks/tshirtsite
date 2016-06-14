@@ -7,22 +7,27 @@ $primaryColor: #1799da;
 
 @import 'animations';
 
-
-.rowPage {
-  padding-left: 5%;
+.featured{
+  padding-left: 2% !important;
+  padding-right: 0% !important;
 }
 
 .ColumnOne, .ColumnTwo, .ColumnThree{
-  width: 375px;
+  width: 360px;
+  margin-right: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+  display: block;
 }
 .products{
   margin-top:5%;
   margin-bottom: 5%;
+  margin-left: 0px;
 }
 
 .tshirtbox {
   font-size: 0px;
-  @include widthsize(95%);
+  width: 355px;
 
   .flipcontainer {
     border: $primary-border;
